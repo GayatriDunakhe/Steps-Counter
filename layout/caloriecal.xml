@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.main.PlaceholderFragment"
+    tools:ignore="MissingDefaultResource"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#F81D1F1D"
+        android:layout_margin="35dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Age"
+                    android:textColor="@color/orange"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#ff870d" />
+
+                <EditText
+                    android:id="@+id/he"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Height(cm)"
+                    android:textColor="@color/orange"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#ff870d"/>
+
+                <EditText
+                    android:id="@+id/we"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Weight(kg)"
+                    android:textColor="@color/orange"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#ff870d"/>
+
+                <EditText
+                    android:id="@+id/wlksp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/orange"
+                    android:hint="Number of Steps"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#ff870d"/>
+
+                <Button
+                    android:id="@+id/chk"
+                    android:layout_width="100dp"
+                    android:layout_height="59dp"
+                    android:text="Check"
+                    android:textColor="#ff870d"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/output"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:text=""
+                    android:paddingLeft="20dp"
+                    android:textColor="#ff870d"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
